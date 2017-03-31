@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     ViewGroup container = (ViewGroup) findViewById(android.R.id.content);
     Router router = Conductor.attachRouter(this, container, savedInstanceState);
     if (!router.hasRootController()) {
-      router.setRoot(RouterTransaction.with(new ControllerWithPagerAdapter()));
+      router.setRoot(RouterTransaction.with(new ControllerWithPager()));
     }
 
     RouterTransaction greenTransaction = RouterTransaction.with(new Green())

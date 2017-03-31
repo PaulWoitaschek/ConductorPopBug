@@ -13,7 +13,7 @@ import com.bluelinelabs.conductor.Controller;
  *
  * @author Paul Woitaschek
  */
-public class ControllerWithPagerAdapter extends Controller {
+public class ControllerWithPager extends Controller {
 
   @NonNull @Override protected View onCreateView(@NonNull LayoutInflater inflater, @NonNull ViewGroup container) {
     ViewPager viewPager = new ViewPager(getActivity());
@@ -24,4 +24,3 @@ public class ControllerWithPagerAdapter extends Controller {
     return viewPager;
   }
 }
-
